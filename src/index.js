@@ -18,7 +18,6 @@ const data=[
         "index":1
      },
 ]
-
 const ul=document.createElement('ul')
 const div=document.createElement('div')
 div.innerHTML=`<h3 class="today">Today's todo</h3>`
@@ -35,6 +34,7 @@ data.map((item)=>{
 
 ul.append(li)
 })
+
 const item=document.querySelector(".container")
 item.appendChild(ul)
 }
