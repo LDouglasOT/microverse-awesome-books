@@ -4,7 +4,6 @@ import {clearall,falsify} from './print.js';
 window.onload=()=>{
 let cleandata=[];
 const ul=document.createElement('ul')
-
 class todo {
     constructor(index, description, completed) {
       this.index = index;
@@ -12,8 +11,6 @@ class todo {
       this.completed = completed;
     }
   }
-
-
 const addliststodom=()=>{ 
 ul.innerHTML = ""
 cleandata=JSON.parse(localStorage.getItem('deletetodo')) || []
